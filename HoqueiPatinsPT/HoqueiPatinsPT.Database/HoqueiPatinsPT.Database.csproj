@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B2644B61-BA32-4FA8-9BCF-EEEA62285510}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>HoqueiPatinsPT.Database</RootNamespace>
     <AssemblyName>HoqueiPatinsPT.Database</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -31,12 +31,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -55,23 +61,24 @@
     <Compile Include="Context.cs" />
     <Compile Include="Mappings\MatchMap.cs" />
     <Compile Include="Mappings\TeamMap.cs" />
-    <Compile Include="Migrations\201705030143091_AddTeamsAndMatchesTables.cs" />
-    <Compile Include="Migrations\201705030143091_AddTeamsAndMatchesTables.Designer.cs">
-      <DependentUpon>201705030143091_AddTeamsAndMatchesTables.cs</DependentUpon>
+    <Compile Include="Migrations\201705032041146_AddTeamsAndMatchesTables.cs" />
+    <Compile Include="Migrations\201705032041146_AddTeamsAndMatchesTables.Designer.cs">
+      <DependentUpon>201705032041146_AddTeamsAndMatchesTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Match.cs" />
     <Compile Include="Models\Team.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705030143091_AddTeamsAndMatchesTables.resx">
-      <DependentUpon>201705030143091_AddTeamsAndMatchesTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705032041146_AddTeamsAndMatchesTables.resx">
+      <DependentUpon>201705032041146_AddTeamsAndMatchesTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

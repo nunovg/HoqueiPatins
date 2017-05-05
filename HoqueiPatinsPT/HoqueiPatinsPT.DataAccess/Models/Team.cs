@@ -1,13 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace HoqueiPatinsPT.Database.Models
+namespace HoqueiPatinsPT.DataAccess.Models
 {
     public class Team
     {
-        [Key]
         public Guid PKID { get; set; }
 
         public string Name { get; set; }

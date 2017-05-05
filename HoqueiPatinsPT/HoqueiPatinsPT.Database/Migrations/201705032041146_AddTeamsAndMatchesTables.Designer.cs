@@ -13,7 +13,7 @@ namespace HoqueiPatinsPT.Database.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201705030143091_AddTeamsAndMatchesTables"; }
+            get { return "201705032041146_AddTeamsAndMatchesTables"; }
         }
         
         string IMigrationMetadata.Source

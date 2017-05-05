@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.DataAccess", "HoqueiPatinsPT.DataAccess\HoqueiPatinsPT.DataAccess.csproj", "{F8F292DE-6A74-4E5F-93B9-5510FA5093F3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.BusinessLogic", "HoqueiPatinsPT.BusinessLogic\HoqueiPatinsPT.BusinessLogic.csproj", "{F8AE8AE8-41F5-4922-A653-3EC45C3C9F83}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.WebApi", "HoqueiPatinsPT.WebApi\HoqueiPatinsPT.WebApi.csproj", "{B9249131-8895-4005-9094-B61D99746229}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.Database", "HoqueiPatinsPT.Database\HoqueiPatinsPT.Database.csproj", "{B2644B61-BA32-4FA8-9BCF-EEEA62285510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.WebApi", "HoqueiPatinsPT.WebApi\HoqueiPatinsPT.WebApi.csproj", "{4AFA824D-6B38-4B5D-9168-8BDFBAA58B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoqueiPatinsPT.DataAccess", "HoqueiPatinsPT.DataAccess\HoqueiPatinsPT.DataAccess.csproj", "{10CED46D-4B3E-4267-8F8C-00EA06C24B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F8F292DE-6A74-4E5F-93B9-5510FA5093F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8F292DE-6A74-4E5F-93B9-5510FA5093F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8F292DE-6A74-4E5F-93B9-5510FA5093F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8F292DE-6A74-4E5F-93B9-5510FA5093F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8AE8AE8-41F5-4922-A653-3EC45C3C9F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8AE8AE8-41F5-4922-A653-3EC45C3C9F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8AE8AE8-41F5-4922-A653-3EC45C3C9F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8AE8AE8-41F5-4922-A653-3EC45C3C9F83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B9249131-8895-4005-9094-B61D99746229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9249131-8895-4005-9094-B61D99746229}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9249131-8895-4005-9094-B61D99746229}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9249131-8895-4005-9094-B61D99746229}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2644B61-BA32-4FA8-9BCF-EEEA62285510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2644B61-BA32-4FA8-9BCF-EEEA62285510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2644B61-BA32-4FA8-9BCF-EEEA62285510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2644B61-BA32-4FA8-9BCF-EEEA62285510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFA824D-6B38-4B5D-9168-8BDFBAA58B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFA824D-6B38-4B5D-9168-8BDFBAA58B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFA824D-6B38-4B5D-9168-8BDFBAA58B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFA824D-6B38-4B5D-9168-8BDFBAA58B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CED46D-4B3E-4267-8F8C-00EA06C24B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CED46D-4B3E-4267-8F8C-00EA06C24B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CED46D-4B3E-4267-8F8C-00EA06C24B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CED46D-4B3E-4267-8F8C-00EA06C24B0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,9 @@ namespace HoqueiPatinsPT.Database.Migrations
                     {
                         PKID = c.Guid(nullable: false),
                         HomeTeamId = c.Guid(nullable: false),
+                        HomeTeamScore = c.Int(nullable: false),
                         AwayTeamId = c.Guid(nullable: false),
+                        AwayTeamScore = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.PKID)
                 .ForeignKey("dbo.Teams", t => t.AwayTeamId)
